@@ -1,0 +1,488 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,700);
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+li,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #FFFFFF;
+    max-width: 1440px;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 16px 0;
+}
+
+.menu {
+    display: flex;
+    gap: 37px;
+}
+
+.menu-item a {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.menu-item a:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 12px 24px;
+    background: #000000;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+.hover-btn:hover {
+    color: #000000;
+    background: #DFDFDF;
+    cursor: pointer;
+}
+
+/* Перша секція */
+
+.wrapper {
+    display: flex;
+}
+
+.create {
+    display: flex;
+    background: #000000;
+    width: 100%;
+    max-width: 610px;
+    max-height: 650px;
+    position: relative;
+}
+
+.create::before {
+    content: "";
+    width: 6px;
+    height: 304px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    position: absolute;
+    left: 0;
+    top: 180px;
+}
+
+.create article {
+    padding: 173px 111px 173px 112px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    color: #000000;
+    max-width: 387px;
+    margin-bottom: 21px;
+}
+
+p {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 387px;
+    margin-bottom: 48px;
+}
+
+.color-title {
+    color: #FFFFFF;
+}
+
+.color-prgrph {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.btn {
+    padding: 0;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.btn::after {
+    content: url("../img/arrow.svg");
+    position: absolute;
+    top: 1px;
+    padding-left: 16px;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.create-img {
+    width: 100%;
+    background: url(../img/create.jpg) center center / cover no-repeat;
+}
+
+/* Кінець першої секції */
+
+.stories {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    max-width: 610px;
+    max-height: 600px;
+}
+
+.stories article {
+    padding: 136px 111px 136px 112px;
+}
+
+.stories-img {
+    width: 100%;
+    background: url(../img/stories.jpg) center center / cover no-repeat;
+}
+
+.btn-stories {
+    padding: 0;
+    background: none;
+    color: #000000;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-stories:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-stories::after {
+    content: url("../img/black-arrow.svg");
+    position: absolute;
+    top: 2px;
+    padding-left: 26px;
+}
+
+/* Третя секція */
+
+.designed {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    max-width: 610px;
+    max-height: 600px;
+}
+
+.designed article {
+    padding: 160px 111px 159px 112px;
+}
+
+.designed-img {
+    width: 100%;
+    background: url(../img/designed.jpg) center center / cover no-repeat;
+}
+
+.btn-stories {
+    padding: 0;
+    background: none;
+    color: #000000;
+    position: relative;
+}
+
+.btn-stories::after {
+    content: url("../img/black-arrow.svg");
+    position: absolute;
+    top: 2px;
+    padding-left: 26px;
+}
+
+/* Четверта секція */
+
+.mountains {
+    width: 100%;
+    background: url(../img/cards/montains.png) center center / cover no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.mountains:hover {
+    transform: translateY(-24px);
+}
+
+.mountains:hover .line-colorful{
+    opacity: 1;
+}
+
+.cityscapes {
+    width: 100%;
+    background: url(../img/cards/cityscapes.png) center center / cover no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.cityscapes:hover {
+    transform: translateY(-24px);
+}
+
+.cityscapes:hover .line-colorful{
+    opacity: 1;
+}
+
+.days-voyage {
+    width: 100%;
+    background: url(../img/cards/daysvoyage.png) center center / cover no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.days-voyage:hover {
+    transform: translateY(-24px);
+}
+
+.days-voyage:hover .line-colorful{
+    opacity: 1;
+}
+
+.architecturals {
+    width: 100%;
+    background: url(../img/cards/architecturals.png) center center / cover no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.architecturals:hover {
+    transform: translateY(-24px);
+}
+
+.architecturals:hover .line-colorful{
+    opacity: 1;
+}
+
+.card-text {
+    padding: 361px 40px 40px 40px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+h3+p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0px;
+    padding-bottom: 16px;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    padding: 0;
+    background: none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.card-btn::after {
+    content: url("../img/arrow.svg");
+    position: absolute;
+    top: 0px;
+    padding-left: 140px;
+}
+
+.line-colorful {
+    width: inherit;
+    height: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+/* П'ята секція */
+
+.rows {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 120px 0;
+}
+
+.row {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row__item {
+    display: flex;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 48px;
+}
+
+h4 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.row__paragraph {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Футер */
+
+footer {
+    background-color: #000000;
+    padding: 64px 0;
+}
+
+.block-left {
+    display: flex;
+    gap: 109px;
+}
+
+.block-left__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.social-facebook {
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon/facebook.svg") center center / contain no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+
+.social-facebook:hover {
+    background: url("../img/icon/facebook-color.svg") center center / contain no-repeat;
+    cursor: pointer;
+}
+
+.social-youtube {
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon/youtube.svg") center center / contain no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.social-youtube:hover {
+    background: url("../img/icon/youtube-color.svg") center center / contain no-repeat;
+    cursor: pointer;
+}
+
+.social-twitter {
+    width: 20px;
+    height: 16px;
+    background: url("../img/icon/twitter.svg") center center / contain no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.social-twitter:hover {
+    background: url("../img/icon/twitter-color.svg") center center / contain no-repeat;
+    cursor: pointer;
+}
+
+.social-pinterest {
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon/pinterest.svg") center center / contain no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.social-pinterest:hover {
+    background: url("../img/icon/pinterest-color.svg") center center / contain no-repeat;
+    cursor: pointer;
+}
+
+.social-instragram {
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon/instragram.svg") center center / contain no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.social-instragram:hover {
+    background: url("../img/icon/instragram-color.svg") center center / contain no-repeat;
+    cursor: pointer;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.left-menu-item {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+}
+
+.left-menu-item:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.block-right {
+    display: flex;
+    flex-direction: column;
+    gap: 86px;
+}
+
+span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
